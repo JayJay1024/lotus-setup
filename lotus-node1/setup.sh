@@ -5,10 +5,10 @@ set -euo pipefail
 
 ROOT_DIR=`pwd`
 # sector size
-# SECTOR_SIZE=2048
-SECTOR_SIZE=536870912
+SECTOR_SIZE=2048
+# SECTOR_SIZE=536870912
 # sector num
-SECTOR_NUM=1
+SECTOR_NUM=2
 # data directory
 DATA_DIR=${ROOT_DIR}/data_dir
 

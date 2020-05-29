@@ -4,8 +4,8 @@ set -euo pipefail
 # set -euxo pipefail
 
 ROOT_DIR=`pwd`
-# SECTOR_SIZE=2048
-SECTOR_SIZE=536870912
+SECTOR_SIZE=2048
+# SECTOR_SIZE=536870912
 DATA_DIR=${ROOT_DIR}/data_dir
 
 cd ../lotus-node1
