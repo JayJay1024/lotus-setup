@@ -1,0 +1,19 @@
+#!/bin/bash
+
+ROOT_PATH=`pwd`
+REPO_PATH=${ROOT_PATH}/repo
+DATA_PATH=${ROOT_PATH}/data
+
+
+SECTOR_NUM=1
+# SECTOR_SIZE=2048
+SECTOR_SIZE=536870912
+
+
+cd ../lotus/repo
+REPO_PATH_LOTUS=`pwd`
+cd ${ROOT_PATH}
+export LOTUS_PATH=${REPO_PATH_LOTUS}
+
+
+export LOTUS_STORAGE_PATH=${REPO_PATH}
