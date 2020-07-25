@@ -7,6 +7,9 @@ clear
 source ./env.sh
 
 
+if [ -d ${REPO_PATH} ];then
+    rm -rf ${REPO_PATH}
+fi
 if [ -d ${DATA_PATH} ];then
     rm -rf ${DATA_PATH}
 fi
