@@ -16,4 +16,4 @@ fi
 mkdir ${DATA_PATH}
 
 
-lotus-worker run --address=127.0.0.1:6001 --precommit1=true --precommit2=true --commit=true 2>&1 | tee ${DATA_PATH}/worker.log
+lotus-worker run --listen=127.0.0.1:6001 --addpiece=true --precommit1=false --precommit2=true --commit=false 2>&1 | tee ${DATA_PATH}/worker.log
