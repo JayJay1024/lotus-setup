@@ -15,4 +15,4 @@ fi
 mkdir ${DATA_PATH}
 
 lotus-miner init --genesis-miner --actor=t01000 --sector-size=${SECTOR_SIZE} --pre-sealed-sectors=~/.genesis-sectors --pre-sealed-metadata=~/.genesis-sectors/pre-seal-t01000.json --nosync
-lotus-miner run --api=9001 --nosync --enable-gpu-proving=false 2>&1 | tee ${DATA_PATH}/miner.log
+lotus-miner run --nosync --enable-gpu-proving=false 2>&1 | tee ${DATA_PATH}/miner.log
